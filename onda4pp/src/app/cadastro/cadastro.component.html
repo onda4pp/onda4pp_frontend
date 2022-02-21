@@ -1,1 +1,62 @@
 <p>cadastro works!</p>
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-6" id="img-bg"></div>
+
+        <div class="col-md-6 mt-5 mb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10">
+                    <h1 class="text-center">Cadastro</h1>
+
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" name="nome" id="nome" placeholder="seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" class="form-control" name="cpf" id="cpf" placeholder="seu cpf">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="seu email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="foto">Link da Foto</label>
+                        <input type="text" class="form-control" name="usuario" id="usuario" placeholder="sua foto">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" name="senha" id="senha" placeholder="sua senha">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmeSenha">Confirme a senha</label>
+                        <input type="password" class="form-control" name="senha" id="senha" placeholder="confirme sua senha">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Tipo de usuárie</label>
+                        <select class="form-control" name="tipo" id="tipo" placeholder="tipo de usuárie">
+                            <option>Selecione um tipo de usuárie</option>
+                            <option value="normal">Empresa</option>
+                            <option value="adm">Consumidor Final</option>
+                        </select>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-danger mr-4" routerLink="/entrar">Cancelar</button>
+                        <button type="submit" class="btn btn-success ml-4">Entrar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
