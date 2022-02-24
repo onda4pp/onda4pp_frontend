@@ -8,16 +8,11 @@ ul.social-network li{
     margin: 0;
     padding: 5px;
 }
-
-.fa{
-    font-size: 30pt;
-    color: white;
+.fa-brands{
+    font-size: 35pt;
+    color: #053813;
     padding: 10px;
 }
-.fa-brands fa-facebook:hover{
-    color: #3b5998;
-}
-
-.fa-brands fa-instagram:hover{
+.fa-brands:hover{
     color: #c13584;
 }

@@ -1,17 +1,7 @@
-/*Estilos da página Fale Conosco!*/
-
-.alinharformulario{
-
-    width: 50px;
-    position: absolute;
-    left: 50;
-    top: 50;
-}
-
-.container{
-
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
+#img-bg{
+    background-image: url(https://i.imgur.com/xioVlqg.png);
+    min-height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
