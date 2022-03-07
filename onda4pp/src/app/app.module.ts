@@ -13,6 +13,7 @@ import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
 import { Footer2Component } from './footer2/footer2.component';
 //import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InicioComponent } from './inicio/inicio.component';
+import { TemaComponent } from './tema/tema.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InicioComponent } from './inicio/inicio.component';
     CadastroComponent,
     LoginComponent,
     FaleConoscoComponent,
-    InicioComponent
+    InicioComponent,
+    TemaComponent
   ],
   imports: [
     BrowserModule,
