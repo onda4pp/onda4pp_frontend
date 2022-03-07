@@ -11,7 +11,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { LoginComponent } from './login/login.component';
 import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
 import { Footer2Component } from './footer2/footer2.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+//import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
@@ -27,7 +27,7 @@ import { InicioComponent } from './inicio/inicio.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
+    //FontAwesomeModule,
     HttpClientModule,
     FormsModule
   ],
