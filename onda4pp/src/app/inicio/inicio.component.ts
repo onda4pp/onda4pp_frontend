@@ -26,6 +26,9 @@ export class InicioComponent implements OnInit {
   user: Usuario = new Usuario()
   idUser = environment.id
 
+  // token = environment.token
+  // userLogado = environment.nome
+
 
   constructor(
     private router: Router,
@@ -62,8 +65,8 @@ export class InicioComponent implements OnInit {
     })
   }
 
-  findByIdUser() {
-    this.authService.getByIdUser(this.idUser).subscribe((resp: Usuario) => {
+  findByIdUser(){
+    this.authService.getByIdUser(this.idUser).subscribe((resp: Usuario) =>{
       this.user = resp
     })
   }
