@@ -1,3 +1,4 @@
+<!-- "Cabeçalho" -->
 <div class="container-fluid">
   <div class="row bg-secondary d-flex align-items-center">
     <div class="col-md-6">
@@ -23,10 +24,13 @@
     </div>
   </div>
 </div>
+<!-- /"Cabeçalho" -->
+
 
 <div class="container mb-5 mt-5" id="postagens">
   <nav>
 
+    <!-- Abas -->
     <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
 
       <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab"
@@ -42,7 +46,9 @@
         href="#postagemTema" role="tab" aria-controls="nav-postagem-tema" aria-selected="false">Postagem por tema</a>
 
     </div>
+    <!-- /Abas -->
 
+    <!-- Todas as postagens -->
   </nav>
   <div class="tab-content mt-5" id="nav-tabContent">
     <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="todasPostagens-tab">
@@ -51,35 +57,40 @@
         <div class="card text-center" *ngFor="let item of listaPostagem">
           <div class="card-body">
             <h5 class="card-title m-0">{{item.titulo}}</h5>
-            <small class="text-muted mb-3">Tema: {{item.tema.titulo}}</small>
-            <p class="card-text">{{item.texto}}</p>
+            <small class="text-muted">Tema: {{item.tema.titulo}}</small>
+            <p class="card-text mt-3">{{item.texto}}</p>
+            <p class="card-text m-0"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date:
+                'HH:mm'}}</small></p>
+            <p class="card-text m-0"><small class="text-muted">by: {{item.usuario.nome}}</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Todas as postagens -->
+
+
+    <!-- Minhas postagens -->
+    <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+
+      <div class="card-columns">
+        <div class="card text-center" *ngFor="let item of user.postagem">
+          <div class="card-body">
+            <h5 class="card-title m-0">{{item.titulo}}</h5>
+            <small class="text-muted">Tema: {{item.tema.descricao}}</small>
+            <p class="card-text mt-3">{{item.texto}}</p>
             <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date:
                 'HH:mm'}}</small></p>
-            <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small></p>
+
+            <a [routerLink]="['/postagem-edit', item.id_postagem]" class="text-info mr-3">Editar</a>
+            <a [routerLink]="['/postagem-delete', item.id_postagem]" class="text-danger">Apagar</a>
           </div>
         </div>
       </div>
 
-
     </div>
-    <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+    <!-- /Minhas postagens -->
 
-      <div class="card-columns">
-          <div class="card text-center" *ngFor="let item of user.postagem">
-              <div class="card-body">
-                <h5 class="card-title m-0">{{item.titulo}}</h5>
-                <small class="text-muted">Tema: {{item.tema.descricao}}</small>
-                <p class="card-text mt-3">{{item.texto}}</p>
-                <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small></p>
-
-                <a [routerLink]="['/postagem-edit', item.id_postagem]" class="text-info mr-3">Editar</a>
-                <a [routerLink]="['/postagem-delete', item.id_postagem]" class="text-danger">Apagar</a>
-              </div>
-            </div>
-      </div>
-
-  </div>
-
+    <!-- Postagem por tema -->
     <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
 
 
@@ -94,9 +105,10 @@
           </div>
         </div>
       </div>
-
-
     </div>
+    <!-- Postagem por tema -->
+
+
   </div>
 </div>
 
@@ -158,3 +170,4 @@
     </div>
   </div>
 </div>
+<!-- /Modal -->

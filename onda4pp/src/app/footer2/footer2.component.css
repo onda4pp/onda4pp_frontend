@@ -10,9 +10,9 @@ ul.social-network li{
 }
 .fa-brands{
     font-size: 35pt;
-    color: #053813;
+    color: black;
     padding: 10px;
 }
 .fa-brands:hover{
-    color: #c13584;
+    color: #148D95;
 }

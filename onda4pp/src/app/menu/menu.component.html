@@ -1,28 +1,30 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFFBDC">
-    <a class="navbar-brand" href="#">ONDA</a>
+<nav id="nav-bar-menu" class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #FFFBDC">
+    
+    <a class="navbar-brand font-weight-bold roboto" href="#">
+        <h2>ONDA</h2>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto d-flex aligin-items-center">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Avalie <span class="sr-only"></span></a>
+    <div class="collapse navbar-collapse roboto" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto d-flex aligin-items-center ">
+            <li class="nav-item ">
+                <a class="nav-link ml-5 pl-5" routerLink="/cadastrar">AVALIE</a>
             </li>
-            <li class="nav-item pl-3">
-                <a class="nav-link" href="#">Empresas</a>
+            <li class="nav-item ml-5 pl-5">
+                <a class="nav-link" href="#empresas">EMPRESAS</a>
             </li>
-            <li class="nav-item pl-3">
-                <a class="nav-link" routerLink="/faleconosco" href="#">Fale Conosco</a>
+            <li class="nav-item ml-5 pl-5">
+                <a class="nav-link" href="#equipe">EQUIPE</a>
+            </li>
+            <li class="nav-item ml-5 pl-5">
+                <a class="nav-link" href="#faleconosco">FALE CONOSCO</a>
+            </li>
+            <li class="nav-item ml-5 pl-5">
+                <a class="nav-link" routerLink="/entrar" href="#">ENTRAR</a>
             </li>
         </ul>
-
     </div>
-    <ul class="navbar-nav ml-auto d-flex aligin-items-center">
-        <form class="form-inline my-2 my-lg-0 pl-3">
-            <input class="form-control mr-sm-2" type="pesquisa" placeholder="Pesquisa" aria-label="Pesquisa">
-            <button class="btn btn-outline-success my-2 my-sm-1" type="submit">Pesquisa</button>
-        </form>
-    </ul>
 </nav>

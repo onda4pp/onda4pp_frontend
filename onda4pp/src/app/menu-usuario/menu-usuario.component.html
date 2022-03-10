@@ -1,0 +1,29 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #FFFBDC">
+    
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse roboto" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto d-flex align-items-center">
+        <li class="nav-item active">
+          <!-- intepolação para exibição de dados atualizados pelo login -->
+            <img src="{{foto}}" alt="" height="50px" width="50px" class="rounded-circle">
+        </li>
+        <li class="nav-link pl-2">
+          <p class="m-0 font-weight-bold fs-16">{{nome}}</p>
+        </li>
+        <li class="nav-link pl-2">
+            <a href="">
+                <i class="fa-solid fa-user-pen fs-16"></i>
+            </a>
+        </li>
+      </ul> 
+      <ul class="navbar-nav ml-auto nav-link d-flex align-items-center">
+        <a (click)="sair()" href="">
+            <li class="pl-2">
+                <p class="m-0 font-weight-bold fs-16">Sair <i class="fa-solid fa-arrow-right-from-bracket"></i></p>
+        </a>
+      </ul>  
+    </div>
+  </nav>
