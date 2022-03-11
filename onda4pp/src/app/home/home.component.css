@@ -2,6 +2,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
 .button-1{
     display: inline-block;
     padding: 15px 25px;
@@ -25,11 +34,55 @@
   transform: translateY(4px);
 }
 
+.custom-shape-divider-bottom-1646941051 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1646941051 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 78px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1646941051 .shape-fill {
+    fill: #FFFBDC;
+}
+
+.custom-shape-divider-bottom-1646941359 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1646941359 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 78px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1646941359 .shape-fill {
+    fill: #148D95;
+}
+
 .container-fluid{
     padding: 0;
 }
  .button-2{
-    height: 400px;
+    height: 550px;
     width: auto;
     display: inline-block;
     padding: 15px 25px;

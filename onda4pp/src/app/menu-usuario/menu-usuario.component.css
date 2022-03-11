@@ -6,6 +6,25 @@
     font-size: 16pt;
 }
 
-.a{
-    color: black;
+a { color: inherit; } 
+
+.custom-shape-divider-top-1646941888 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1646941888 svg {
+    position: relative;
+    display: block;
+    width: calc(111% + 1.3px);
+    height: 38px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1646941888 .shape-fill {
+    fill: #FFFBDC;
 }

@@ -20,6 +20,7 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { HomeComponent } from './home/home.component';
 import { MenuUsuarioComponent } from './menu-usuario/menu-usuario.component';
+import { FooterUsuarioComponent } from './footer-usuario/footer-usuario.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { MenuUsuarioComponent } from './menu-usuario/menu-usuario.component';
     PostagemDeleteComponent,
     PostagemEditComponent,
     HomeComponent,
-    MenuUsuarioComponent
+    MenuUsuarioComponent,
+    FooterUsuarioComponent
   ],
   imports: [
     BrowserModule,

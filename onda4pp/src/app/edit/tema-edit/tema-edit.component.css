@@ -1,0 +1,73 @@
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-1{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #FFEF61;
+    border: 2px solid #FFFBDC;
+    border-radius: 15px;
+    box-shadow: 0 9px #FFFBDC;
+}
+
+.button-1:hover {background-color: #ffea2f}
+
+.button-1:active {
+  background-color: #ffea2f;
+  box-shadow: 0 5px #FFFBDC;
+  transform: translateY(4px);
+}
+
+.container-fluid{
+    padding: 0;
+}
+ .button-2{
+    height: 400px;
+    width: auto;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #FFFBDC;
+    border: 2px solid #ffea2f;
+    border-radius: 15px;
+    box-shadow: 0 9px #ffea2f;
+}
+
+.button-2-1{
+    display: inline-block;
+    padding: 15px 25px;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #FFFBDC;
+    border: 2px solid #ffea2f;
+    border-radius: 15px;
+    box-shadow: 0 9px #ffea2f;
+}
+
+.button-3{
+    width: 100%;
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 16px;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #FFFBDC;
+    border: 2px solid #148D95;
+    border-radius: 15px;
+    box-shadow: 0 5px #148D95;
+}
+

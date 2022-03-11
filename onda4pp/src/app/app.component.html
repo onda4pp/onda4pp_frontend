@@ -1,3 +1,5 @@
 <app-menu-usuario *ngIf="auth.logado()"></app-menu-usuario>
 
 <router-outlet></router-outlet>
+
+<app-footer-usuario *ngIf="auth.logado()"></app-footer-usuario>
